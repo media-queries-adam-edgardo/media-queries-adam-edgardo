@@ -12,11 +12,9 @@ nav li {
     padding: 10px;
 }
 
+
 /*this is for the mobile view*/
 @media screen and (max-width:365px) {
-    html {
-        height: 100%;
-    }
     *{
         box-sizing: border-box;
     }
@@ -84,6 +82,12 @@ nav li {
 }
 /*this is for desktop*/
 @media screen and (min-width:366px) {
+    body {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+        align-self: center;
+    }
     .hidden-on-desktop {
         display: none;
     }
@@ -92,5 +96,36 @@ nav li {
     }
     nav {
         display: inline-block;
+        margin-left: auto;
+        float:right;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    .header-img img {
+        width: 890px;
+        height:385px;
+    }
+    .header-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    section {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .sub-section {
+        width: 30%;
+    }
+    .main {
+        width: 65%;
+    }
+    footer {
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
