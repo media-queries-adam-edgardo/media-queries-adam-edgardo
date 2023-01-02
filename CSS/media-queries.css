@@ -3,6 +3,9 @@
 }
 
 @media screen and (max-width:365px) {
+    html {
+        height: 100%;
+    }
     *{
         box-sizing: border-box;
     }
@@ -11,6 +14,7 @@
         flex-direction: column;
         align-items: center;
         padding:12px;
+        height: 100%;
     }
     .alert-info {
         background-color: #c4f5f5;
@@ -65,5 +69,12 @@
     }
     .sub-section h2 {
         font-size: large;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: auto;
+        width: 100%;
     }
 }
